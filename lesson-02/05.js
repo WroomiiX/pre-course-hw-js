@@ -3,7 +3,7 @@ let passport = {
     surname: "Petrov",
 };
 
-let clon = JSON.parse(JSON.stringify(passport));
-clon.name = "Ivan";
+let passportCopy = Object.assign({}, passport);
+passportCopy.name = "Ivan";
 console.log(passport.name)
-console.log(clon.name)
+console.log(passportCopy.name)

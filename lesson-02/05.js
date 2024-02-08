@@ -1,9 +1,9 @@
-let passport = {
+const passport = {
     name: "Petr",
     surname: "Petrov",
 };
 
-let passportCopy = {...passport};
+const passportCopy = {...passport};
 passportCopy.name = 'Ivan';
 console.log(passport.name);
 console.log(passportCopy.name);

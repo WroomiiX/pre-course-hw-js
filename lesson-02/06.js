@@ -1,4 +1,4 @@
-let passportWithAddress = {
+const passportWithAddress = {
     name: "Petr",
     surname: "Petrov",
     address: {
@@ -7,7 +7,7 @@ let passportWithAddress = {
     }
 };
 
-let passportWithAddressCopy = structuredClone(passportWithAddress);
+const passportWithAddressCopy = structuredClone(passportWithAddress);
 passportWithAddressCopy.address.city = 'Bobryisk';
 console.log(passportWithAddress.address.city);
 console.log(passportWithAddressCopy.address.city)

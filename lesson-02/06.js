@@ -1,18 +1,12 @@
-let passportMarried = {
+let passportWithAddress = {
     name: "Petr",
     surname: "Petrov",
     address: {
         country: "USA",
-        city: "Bobryisk"
+        city: "LA"
     }
 };
-let passportMarried2 = {
-    ...passportMarried,
-    married: true,
-    address: {
-        ...passportMarried.address
-    }
-}
-
-console.log(passportMarried);
-console.log(passportMarried2);
+let copyPass = structuredClone(passportWithAddress);
+copyPass.address.city =  'Bobryisk';
+console.log(passportWithAddress.address.city);
+console.log(copyPass.address.city);
